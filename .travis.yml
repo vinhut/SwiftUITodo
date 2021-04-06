@@ -3,4 +3,5 @@ language: objective-c
 osx_image: xcode11
 script:
         #  - xcodebuild build-for-testing -project SwiftUITodo.xcodeproj -scheme SwiftUITodo -destination generic/platform=iOS -allowProvisioningUpdates
-  - xcodebuild -project SwiftUITodo.xcodeproj -scheme SwiftUITodo test
+        #  - xcodebuild -project SwiftUITodo.xcodeproj -scheme SwiftUITodo test
+  - xcodebuild test-without-building -project SwiftUITodo.xcodeproj -scheme SwiftUITodo -destination 'platform=iOS Simulator,name=iPhone 7' -destination 'platform=iOS,name=My iPad'
