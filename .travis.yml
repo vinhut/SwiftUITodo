@@ -2,4 +2,5 @@ os: osx
 language: objective-c
 osx_image: xcode11
 script:
-  - xcodebuild build-for-testing -project SwiftUITodo.xcodeproj -scheme SwiftUITodo -destination generic/platform=iOS -allowProvisioningUpdates
+        #  - xcodebuild build-for-testing -project SwiftUITodo.xcodeproj -scheme SwiftUITodo -destination generic/platform=iOS -allowProvisioningUpdates
+  - xcodebuild -project SwiftUITodo.xcodeproj -scheme SwiftUITodo -sdk iphonesimulator10.3 clean analyze
