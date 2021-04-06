@@ -2,4 +2,4 @@ os: osx
 language: objective-c
 osx_image: xcode11
 script:
-  - xcodebuild build-for-testing -workspace SwiftUITodo.xcodeproj/ -scheme SwiftUITodo -destination generic/platform=iOS
+  - xcodebuild build-for-testing -project SwiftUITodo.xcodeproj -scheme SwiftUITodo -destination generic/platform=iOS
